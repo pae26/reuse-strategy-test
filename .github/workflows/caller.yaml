@@ -7,4 +7,4 @@ on:
 
 jobs:
   caller:
-    uses: ./.github/workflows/called.yaml@main
+    uses: ./.github/workflows/called.yaml
