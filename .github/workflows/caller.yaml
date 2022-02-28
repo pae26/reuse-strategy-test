@@ -15,8 +15,8 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@main
       
-      - name: Run test
-        run: echo "run succeeded!"
+      # - name: Run test
+      #   run: echo "run succeeded!"
 
-      # - name: "call called.yaml"
-      #   uses: ./.github/workflows/called.yaml
+      - name: "call called.yaml"
+        uses: ./.github/workflows/called.yaml
