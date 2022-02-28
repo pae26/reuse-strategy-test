@@ -6,4 +6,10 @@ on:
 
 jobs:
   caller:
-    uses: ./.github/workflows/called.yaml
+    strategy:
+      matrix:
+        val: "value"
+
+    steps:
+      - name: "call called.yaml"
+        uses: ./.github/workflows/called.yaml
