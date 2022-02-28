@@ -1,0 +1,10 @@
+name: "coller"
+on:
+  push:
+    branches:
+      - "master"
+    types: [opened, synchronize, closed]
+
+jobs:
+  caller:
+    uses: ./.github/workflows/called.yaml@main
