@@ -5,7 +5,7 @@ on:
 
 jobs:
   called:
-    name: Reuse test
     runs-on: ubuntu-latest
     steps:
-      - run: echo "reuse succeeded!"
+      - name: Reuse test
+        run: echo "reuse succeeded!"
