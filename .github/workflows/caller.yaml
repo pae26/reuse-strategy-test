@@ -6,11 +6,11 @@ on:
 
 jobs:
   caller:
-    strategy:
-      matrix:
-        dir: ["dir1", "dir2"]
+    # strategy:
+    #   matrix:
+    #     dir: ["dir1", "dir2"]
 
-    steps:
+    # steps:
       # - name: "Checkout"
       #   uses: actions/checkout@main
       
@@ -18,4 +18,4 @@ jobs:
       #   run: echo "run succeeded!"
 
     # name: "call called.yaml"
-      - uses: pae26/reuse-strategy-test/.github/workflows/called.yaml@main
+    uses: pae26/reuse-strategy-test/.github/workflows/called.yaml@main
