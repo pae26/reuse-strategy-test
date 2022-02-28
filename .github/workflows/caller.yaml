@@ -8,7 +8,7 @@ jobs:
   caller:
     strategy:
       matrix:
-        val: "value"
+        dir: ["dir1", "dir2"]
 
     steps:
       - name: "call called.yaml"
