@@ -3,8 +3,10 @@ on:
   push:
     branches:
       - "main"
-    types: [opened, synchronize, closed]
 
 jobs:
   caller:
-    uses: ./.github/workflows/called.yaml
+    # uses: ./.github/workflows/called.yaml
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, world!"
