@@ -6,7 +6,4 @@ on:
 
 jobs:
   caller:
-    # uses: ./.github/workflows/called.yaml
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Hello, world!"
+    uses: ./.github/workflows/called.yaml
