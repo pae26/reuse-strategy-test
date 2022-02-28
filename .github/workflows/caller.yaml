@@ -7,9 +7,9 @@ on:
 jobs:
   caller:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        dir: ["dir1", "dir2"]
+    # strategy:
+    #   matrix:
+    #     dir: ["dir1", "dir2"]
 
     steps:
       - name: "Checkout"
