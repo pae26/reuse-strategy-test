@@ -12,11 +12,11 @@ jobs:
     #     dir: ["dir1", "dir2"]
 
     steps:
-      # - name: "Checkout"
-      #   uses: actions/checkout@main
+      - name: "Checkout"
+        uses: actions/checkout@main
       
       # - name: Run test
       #   run: echo "run succeeded!"
 
       - name: "call called.yaml"
-        uses: ./.github/workflows/called.yaml
+        uses: pae26/reuse-strategy-test/.github/workflows/called.yaml
