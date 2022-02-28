@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@main
 
       - name: Reuse test
-        run: echo "reuse succeeded!"
+        run: echo "dir is ${{ matrix.dir }}"
